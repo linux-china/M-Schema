@@ -1,8 +1,8 @@
 # M-Schema: a semi-structure representation of database schema
 ## Introduction
-MSchema is a semi-structured schema representation of database structure, which could be used in various scenarios such as natural language to SQL.
-This repository contains the code for connecting to the database and extracting M-Schema.
-We provide support for a variety of relational databases, such as MySQL, PostgreSQL, Oracle, etc.
+MSchema is a semi-structured schema representation of database structure, which could be used in various scenarios such as Text-to-SQL.
+This repository contains the code for connecting to the database and constructing M-Schema.
+We support a variety of relational databases, such as MySQL, PostgreSQL, Oracle, etc.
 
 ```text
 【DB_ID】card_games
