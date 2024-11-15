@@ -1,0 +1,4 @@
+llama-index
+numpy
+sqlalchemy
+chardet
