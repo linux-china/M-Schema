@@ -146,7 +146,7 @@ class MSchema:
                 cur_table_type = table_info.get('type', 'table')
                 column_names = list(table_info['fields'].keys())
                 if selected_columns is not None:
-                    cur_selected_columns = [c for c in column_names if f"{table_name}.{c}".lower() in selected_columns]
+                    cur_selected_columns = [c.lower() for c in column_names if f"{table_name}.{c}".lower() in selected_columns]
                 else:
                     cur_selected_columns = selected_columns
                 output.append(self.single_table_mschema(table_name, cur_selected_columns, example_num, show_type_detail))
