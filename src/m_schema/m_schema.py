@@ -1,5 +1,5 @@
-from utils import examples_to_str, read_json, write_json
-from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
+from .utils import examples_to_str, read_json, write_json
+from typing import Any, Dict, List, Optional
 
 
 class MSchema:
