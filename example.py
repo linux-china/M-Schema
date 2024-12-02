@@ -1,6 +1,6 @@
 import os
-from schema_engine import SchemaEngine
-from sqlalchemy import create_engine, MetaData, Table, Column, String, Integer, select, text
+from m_schema.schema_engine import SchemaEngine
+from sqlalchemy import create_engine
 
 db_name= 'aan_1'
 db_path = f'./{db_name}.sqlite'
