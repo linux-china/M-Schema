@@ -47,8 +47,9 @@ db_engine = create_engine(f"postgresql+psycopg2://scott:tiger@localhost:5432/{db
 ```
 
 2、construct M-Schema representation.
+
 ```python
-from schema_engine import SchemaEngine
+from m_schema.schema_engine import SchemaEngine
 
 schema_engine = SchemaEngine(engine=db_engine, db_name=db_name)
 mschema = schema_engine.mschema
