@@ -1,6 +1,9 @@
 # M-Schema: a semi-structure representation of database schema
+
 ## Introduction
-MSchema is a semi-structured schema representation of database structure, which could be used in various scenarios such as Text-to-SQL.
+
+MSchema is a semi-structured schema representation of database structure, 
+which could be used in various scenarios such as Text-to-SQL.
 This repository contains the code for connecting to the database and constructing M-Schema.
 We support a variety of relational databases, such as MySQL, PostgreSQL, Oracle, etc.
 
@@ -30,23 +33,28 @@ legalities.uuid=cards.uuid
 ```
 
 ## Requirements
+
 + python >= 3.9
+
 ```shell
 pip install -r requirements.txt
 ```
+
 ## Quick Start
-You can just connect to the database using [```sqlalchemy```](https://www.sqlalchemy.org/) and construct M-Schema representation.
 
-1、create a database connection.
+You can just connect to the database using [```sqlalchemy```](https://www.sqlalchemy.org/) and construct M-Schema
+representation.
 
-Take PostgreSQL as an example:
+1. Create a database connection ad take PostgreSQL as an example:
+
 ```python
 from sqlalchemy import create_engine
+
 db_name = 'mydatabase'
 db_engine = create_engine(f"postgresql+psycopg2://scott:tiger@localhost:5432/{db_name}")
 ```
 
-2、construct M-Schema representation.
+2. Construct M-Schema representation.
 
 ```python
 from m_schema.schema_engine import SchemaEngine
@@ -57,8 +65,10 @@ print(mschema.to_mschema())
 mschema.save(f'./{db_name}.json')
 ```
 
+3. Run the example: `uv run example.py`
 
 ## Citation
+
 If you find our work helpful, feel free to give us a cite.
 
 ```bibtext
