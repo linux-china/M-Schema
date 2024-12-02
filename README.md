@@ -35,9 +35,11 @@ legalities.uuid=cards.uuid
 ## Requirements
 
 + python >= 3.9
++ uv: https://github.com/astral-sh/uv
 
 ```shell
-pip install -r requirements.txt
+$ uv sync
+$ uv run example.py
 ```
 
 ## Quick Start
